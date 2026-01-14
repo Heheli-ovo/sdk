@@ -2,14 +2,16 @@
 /* 函数文档样式增强 */
 /* 函数容器整体样式 */
 h3 {
-  background-color: var(--vp-c-bg-alt);
+  background-color: var(--vp-c-brand-1);
   padding: 1.25rem;
   border-radius: 8px 8px 0 0;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--vp-c-brand-1);
   border-bottom: none;
   margin-bottom: 0 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
 }
 
 /* 函数内容样式 - 形成完整包裹 */
@@ -35,11 +37,11 @@ h3 + div + table,
 h3 + div + div {
   background-color: var(--vp-c-bg);
   padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--vp-c-brand-3);
   border-top: none;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* 最后一个内容元素添加底部圆角 */
@@ -78,44 +80,98 @@ h3 + div + ul + table,
 h3 + div + ul + div,
 h3 + div + table + div {
   border-radius: 0 0 8px 8px;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
 /* 连续的内容元素保持边框和背景 */
 h3 + p + p,
+h3 + p + ul,
+h3 + p + table,
+h3 + p + div,
+h3 + ul + p,
+h3 + ul + ul,
+h3 + ul + table,
+h3 + ul + div,
+h3 + table + p,
+h3 + table + ul,
+h3 + table + table,
+h3 + table + div,
+h3 + div + p,
+h3 + div + ul,
+h3 + div + table,
+h3 + div + div,
+h3 + p + p + p,
+h3 + p + p + ul,
+h3 + p + p + table,
+h3 + p + p + div,
+h3 + p + ul + p,
 h3 + p + ul + ul,
+h3 + p + ul + table,
+h3 + p + ul + div,
+h3 + p + table + p,
+h3 + p + table + ul,
 h3 + p + table + table,
+h3 + p + table + div,
 h3 + p + div + p,
 h3 + p + div + ul,
 h3 + p + div + table,
 h3 + p + div + div,
-h3 + ul + p,
-h3 + ul + ul,
+h3 + ul + p + p,
+h3 + ul + p + ul,
+h3 + ul + p + table,
+h3 + ul + p + div,
+h3 + ul + ul + p,
+h3 + ul + ul + ul,
+h3 + ul + ul + table,
+h3 + ul + ul + div,
+h3 + ul + table + p,
+h3 + ul + table + ul,
+h3 + ul + table + table,
+h3 + ul + table + div,
 h3 + ul + div + p,
 h3 + ul + div + ul,
 h3 + ul + div + table,
 h3 + ul + div + div,
-h3 + table + p,
-h3 + table + ul,
+h3 + table + p + p,
+h3 + table + p + ul,
+h3 + table + p + table,
+h3 + table + p + div,
+h3 + table + ul + p,
+h3 + table + ul + ul,
+h3 + table + ul + table,
+h3 + table + ul + div,
+h3 + table + table + p,
+h3 + table + table + ul,
+h3 + table + table + table,
+h3 + table + table + div,
 h3 + table + div + p,
 h3 + table + div + ul,
 h3 + table + div + table,
 h3 + table + div + div,
-h3 + div + p,
-h3 + div + ul,
-h3 + div + table,
+h3 + div + p + p,
+h3 + div + p + ul,
+h3 + div + p + table,
+h3 + div + p + div,
+h3 + div + ul + p,
+h3 + div + ul + ul,
+h3 + div + ul + table,
+h3 + div + ul + div,
+h3 + div + table + p,
+h3 + div + table + ul,
+h3 + div + table + table,
+h3 + div + table + div,
 h3 + div + div + p,
 h3 + div + div + ul,
 h3 + div + div + table {
-  border-top: 1px solid var(--vp-c-divider);
+  border-top: 1px solid var(--vp-c-brand-3);
   border-radius: 0;
   margin-bottom: 0 !important;
 }
 
 /* 函数名称样式 */
 h3 code {
-  font-weight: 600;
-  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  color: white;
   font-size: 1.05em;
 }
 
@@ -123,8 +179,24 @@ h3 code {
 h3 + p + h3,
 h3 + ul + h3,
 h3 + table + h3,
-h3 + div + h3 {
-  margin-top: 2rem !important;
+h3 + div + h3,
+h3 + p + p + h3,
+h3 + p + ul + h3,
+h3 + p + table + h3,
+h3 + p + div + h3,
+h3 + ul + p + h3,
+h3 + ul + ul + h3,
+h3 + ul + table + h3,
+h3 + ul + div + h3,
+h3 + table + p + h3,
+h3 + table + ul + h3,
+h3 + table + table + h3,
+h3 + table + div + h3,
+h3 + div + p + h3,
+h3 + div + ul + h3,
+h3 + div + table + h3,
+h3 + div + div + h3 {
+  margin-top: 2.5rem !important;
 }
 
 /* 参数表格样式优化 */
@@ -235,8 +307,10 @@ h3 + div + div[class^="language-"] .lang {
 
 /* 深色主题优化 */
 .dark h3 {
-  background-color: var(--vp-c-bg-elv);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: white;
+  border-color: var(--vp-c-brand-1);
 }
 
 .dark h3 + p,
@@ -258,23 +332,112 @@ h3 + div + div[class^="language-"] .lang {
 .dark h3 + div + p,
 .dark h3 + div + ul,
 .dark h3 + div + table,
-.dark h3 + div + div {
-  background-color: var(--vp-c-bg);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.dark h3 + div + div,
+.dark h3 + p + p + p,
+.dark h3 + p + p + ul,
+.dark h3 + p + p + table,
+.dark h3 + p + p + div,
+.dark h3 + p + ul + p,
+.dark h3 + p + ul + ul,
+.dark h3 + p + ul + table,
+.dark h3 + p + ul + div,
+.dark h3 + p + table + p,
+.dark h3 + p + table + ul,
+.dark h3 + p + table + table,
+.dark h3 + p + table + div,
+.dark h3 + p + div + p,
+.dark h3 + p + div + ul,
+.dark h3 + p + div + table,
+.dark h3 + p + div + div,
+.dark h3 + ul + p + p,
+.dark h3 + ul + p + ul,
+.dark h3 + ul + p + table,
+.dark h3 + ul + p + div,
+.dark h3 + ul + ul + p,
+.dark h3 + ul + ul + ul,
+.dark h3 + ul + ul + table,
+.dark h3 + ul + ul + div,
+.dark h3 + ul + table + p,
+.dark h3 + ul + table + ul,
+.dark h3 + ul + table + table,
+.dark h3 + ul + table + div,
+.dark h3 + ul + div + p,
+.dark h3 + ul + div + ul,
+.dark h3 + ul + div + table,
+.dark h3 + ul + div + div,
+.dark h3 + table + p + p,
+.dark h3 + table + p + ul,
+.dark h3 + table + p + table,
+.dark h3 + table + p + div,
+.dark h3 + table + ul + p,
+.dark h3 + table + ul + ul,
+.dark h3 + table + ul + table,
+.dark h3 + table + ul + div,
+.dark h3 + table + table + p,
+.dark h3 + table + table + ul,
+.dark h3 + table + table + table,
+.dark h3 + table + table + div,
+.dark h3 + table + div + p,
+.dark h3 + table + div + ul,
+.dark h3 + table + div + table,
+.dark h3 + table + div + div,
+.dark h3 + div + p + p,
+.dark h3 + div + p + ul,
+.dark h3 + div + p + table,
+.dark h3 + div + p + div,
+.dark h3 + div + ul + p,
+.dark h3 + div + ul + ul,
+.dark h3 + div + ul + table,
+.dark h3 + div + ul + div,
+.dark h3 + div + table + p,
+.dark h3 + div + table + ul,
+.dark h3 + div + table + table,
+.dark h3 + div + table + div,
+.dark h3 + div + div + p,
+.dark h3 + div + div + ul,
+.dark h3 + div + div + table,
+.dark h3 + div + div + div {
+  background-color: var(--vp-c-bg-soft);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--vp-c-brand-3);
 }
 
 .dark h3 + table,
 .dark h3 + p + table,
 .dark h3 + ul + table,
-.dark h3 + div + table {
-  background-color: var(--vp-c-bg);
+.dark h3 + div + table,
+.dark h3 + p + p + table,
+.dark h3 + p + ul + table,
+.dark h3 + p + div + table,
+.dark h3 + ul + p + table,
+.dark h3 + ul + ul + table,
+.dark h3 + ul + div + table,
+.dark h3 + table + p + table,
+.dark h3 + table + ul + table,
+.dark h3 + table + div + table,
+.dark h3 + div + p + table,
+.dark h3 + div + ul + table,
+.dark h3 + div + div + table {
+  background-color: var(--vp-c-bg-soft);
 }
 
 .dark h3 + table th,
 .dark h3 + p + table th,
 .dark h3 + ul + table th,
-.dark h3 + div + table th {
-  background-color: var(--vp-c-bg-soft);
+.dark h3 + div + table th,
+.dark h3 + p + p + table th,
+.dark h3 + p + ul + table th,
+.dark h3 + p + div + table th,
+.dark h3 + ul + p + table th,
+.dark h3 + ul + ul + table th,
+.dark h3 + ul + div + table th,
+.dark h3 + table + p + table th,
+.dark h3 + table + ul + table th,
+.dark h3 + table + div + table th,
+.dark h3 + div + p + table th,
+.dark h3 + div + ul + table th,
+.dark h3 + div + div + table th {
+  background-color: var(--vp-c-bg-elv);
 }
 
 /* 深色主题代码块优化 */
@@ -282,6 +445,22 @@ h3 + div + div[class^="language-"] .lang {
 .dark h3 + p + div[class^="language-"],
 .dark h3 + ul + div[class^="language-"],
 .dark h3 + table + div[class^="language-"],
-.dark h3 + div + div[class^="language-"] {
-  background-color: var(--vp-c-bg-alt);
+.dark h3 + div + div[class^="language-"],
+.dark h3 + p + p + div[class^="language-"],
+.dark h3 + p + ul + div[class^="language-"],
+.dark h3 + p + table + div[class^="language-"],
+.dark h3 + p + div + div[class^="language-"],
+.dark h3 + ul + p + div[class^="language-"],
+.dark h3 + ul + ul + div[class^="language-"],
+.dark h3 + ul + table + div[class^="language-"],
+.dark h3 + ul + div + div[class^="language-"],
+.dark h3 + table + p + div[class^="language-"],
+.dark h3 + table + ul + div[class^="language-"],
+.dark h3 + table + table + div[class^="language-"],
+.dark h3 + table + div + div[class^="language-"],
+.dark h3 + div + p + div[class^="language-"],
+.dark h3 + div + ul + div[class^="language-"],
+.dark h3 + div + table + div[class^="language-"],
+.dark h3 + div + div + div[class^="language-"] {
+  background-color: var(--vp-c-bg-elv);
 }
